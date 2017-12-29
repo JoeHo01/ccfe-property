@@ -1,0 +1,2233 @@
+[
+  {
+    "region": "",
+    "brand": "",
+    "scope": "global",
+    "name": "",
+    "properties": {
+      "ccfe_bg_backend_redirect_url": {
+        "key": "ccfe_bg_backend_redirect_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "ccfe_bg_frontend_redirect_url": {
+        "key": "ccfe_bg_frontend_redirect_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "ccfe_pci_redirect_url": {
+        "key": "ccfe_pci_redirect_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_export_expiration_time": {
+        "key": "customer_export_expiration_time",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_export_columns": {
+        "key": "customer_export_columns",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "sub_properties": {
+          "CUSTOMER ID": {
+            "key": "CUSTOMER ID",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "LEGACY ID": {
+            "key": "LEGACY ID",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "First_name": {
+            "key": "First_name",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "First_name_2": {
+            "key": "First_name_2",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Last_name": {
+            "key": "Last_name",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Last_name_2": {
+            "key": "Last_name_2",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Birth_date": {
+            "key": "Birth_date",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Mobile_Email": {
+            "key": "Mobile_Email",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Email": {
+            "key": "Email",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Gender": {
+            "key": "Gender",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Title": {
+            "key": "Title",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Deleted": {
+            "key": "Deleted",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Contact_By_Brand": {
+            "key": "Contact_By_Brand",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Privacy_Policy": {
+            "key": "Privacy_Policy",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Language": {
+            "key": "Language",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Confirmed": {
+            "key": "Confirmed",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Creation_Date": {
+            "key": "Creation_Date",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Country": {
+            "key": "Country",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Newsletter_Account": {
+            "key": "Newsletter_Account",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Class_Name": {
+            "key": "Class_Name",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Label_Address": {
+            "key": "Label_Address",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Chome_Banchi_Bango": {
+            "key": "Chome_Banchi_Bango",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Street_Number": {
+            "key": "Street_Number",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Floor_Building": {
+            "key": "Floor_Building",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Building": {
+            "key": "Building",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Street_1": {
+            "key": "Street_1",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Street_2": {
+            "key": "Street_2",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "City": {
+            "key": "City",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Town_Area_District": {
+            "key": "Town_Area_District",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Region_State_ Prefecture_Province": {
+            "key": "Region_State_ Prefecture_Province",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Phone": {
+            "key": "Phone",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Mobile": {
+            "key": "Mobile",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Zip_code": {
+            "key": "Zip_code",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "State": {
+            "key": "State",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Default_Address": {
+            "key": "Default_Address",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address_Country": {
+            "key": "Address_Country",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "District": {
+            "key": "District",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Jurisdiction_Code": {
+            "key": "Jurisdiction_Code",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "PO_Box": {
+            "key": "PO_Box",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Area_Code": {
+            "key": "Area_Code",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address14": {
+            "key": "Address14",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address15": {
+            "key": "Address15",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address16": {
+            "key": "Address16",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address17": {
+            "key": "Address17",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address18": {
+            "key": "Address18",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address19": {
+            "key": "Address19",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Address20": {
+            "key": "Address20",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZCLIENTNEWSLETTER": {
+            "key": "ZZCLIENTNEWSLETTER",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZORIGINSITE": {
+            "key": "ZZORIGINSITE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZMAG": {
+            "key": "ZZMAG",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZOCCUPATION": {
+            "key": "ZZOCCUPATION",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZOFFICEPHONE": {
+            "key": "ZZOFFICEPHONE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZZONE": {
+            "key": "ZZZONE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZCITY": {
+            "key": "ZZCITY",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZTYPECATALOGO": {
+            "key": "ZZTYPECATALOGO",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZCATALOGUE": {
+            "key": "ZZCATALOGUE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZZIP": {
+            "key": "ZZZIP",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZADDRESS": {
+            "key": "ZZADDRESS",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZHASPANERAI": {
+            "key": "ZZHASPANERAI",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZMODEL": {
+            "key": "ZZMODEL",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZWEDDINGDATE": {
+            "key": "ZZWEDDINGDATE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZMOBILE": {
+            "key": "ZZMOBILE",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZPRODLINE_ZZCLIENTOWN": {
+            "key": "ZZPRODLINE_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZACCESSORIES_ZZCLIENTOWN": {
+            "key": "ZZACCESSORIES_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZTIMEPIECES_ZZCLIENTOWN": {
+            "key": "ZZTIMEPIECES_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZBRIDAL_ZZCLIENTOWN": {
+            "key": "ZZBRIDAL_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZJEWELRY_ZZCLIENTOWN": {
+            "key": "ZZJEWELRY_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZFRAGRANCE_ZZCLIENTOWN": {
+            "key": "ZZFRAGRANCE_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZCLIENTOWNFROM_ZZCLIENTOWN": {
+            "key": "ZZCLIENTOWNFROM_ZZCLIENTOWN",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZPRODLINE_ZZCLIENTINTEREST": {
+            "key": "ZZPRODLINE_ZZCLIENTINTEREST",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "ZZACCESSORIES_ZZCLIENTINTEREST": {
+            "key": "ZZACCESSORIES_ZZCLIENTINTEREST",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "order_status_options": {
+        "key": "order_status_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_favorites_wishlist_name": {
+        "key": "customer_favorites_wishlist_name",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "JMF": {
+        "key": "JMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Size": {
+            "key": "Size",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Stones": {
+            "key": "Stones",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Clasp": {
+            "key": "Clasp",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Material": {
+            "key": "Material",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "cache_life_time": {
+        "key": "cache_life_time",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "LMF": {
+        "key": "LMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Material": {
+            "key": "Material",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Clasp": {
+            "key": "Clasp",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Size": {
+            "key": "Size",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "WBR": {
+        "key": "WBR",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "product_lang_key_title": {
+        "key": "product_lang_key_title",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "delivery_options": {
+        "key": "delivery_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_type_options": {
+        "key": "order_type_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "OMF": {
+        "key": "OMF",
+        "value": "",
+        "type": "String",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "List",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "List",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "List",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "no_of_search_results_to_show": {
+        "key": "no_of_search_results_to_show",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "status_reason_options": {
+        "key": "status_reason_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "WMF": {
+        "key": "WMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Movement": {
+            "key": "Movement",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Bracelet": {
+            "key": "Bracelet",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Case": {
+            "key": "Case",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "no_of_search_results_to_fetch": {
+        "key": "no_of_search_results_to_fetch",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "antifraud_status_options": {
+        "key": "antifraud_status_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "GENERIC": {
+        "key": "GENERIC",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "LEGACY": {
+        "key": "LEGACY",
+        "value": "",
+        "type": "String",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "List",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "nav_lang_key_title": {
+        "key": "nav_lang_key_title",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "zipcode_optional_countrieslist": {
+        "key": "zipcode_optional_countrieslist",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "tnt_url": {
+        "key": "tnt_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "FMF": {
+        "key": "FMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "payment_options": {
+        "key": "payment_options",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "dms_storage_image_rest_url": {
+        "key": "dms_storage_image_rest_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "dms_storage_image_rest_username": {
+        "key": "dms_storage_image_rest_username",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "dms_storage_image_rest_password": {
+        "key": "dms_storage_image_rest_password",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "EMF": {
+        "key": "EMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Temple and Bridges": {
+            "key": "Temple and Bridges",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Lenses": {
+            "key": "Lenses",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Materials and Stones": {
+            "key": "Materials and Stones",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      }
+    }
+  },
+  {
+    "region": "",
+    "brand": "",
+    "scope": "region",
+    "name": "",
+    "properties": {
+      "enable_calendar_display_for_delivery": {
+        "key": "enable_calendar_display_for_delivery",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "Whether to use calendar display for delivery methods"
+      },
+      "payment_methods_for_antifraud_bypass": {
+        "key": "payment_methods_for_antifraud_bypass",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "Payment methods for which the antifraud validation can be bypassed by Ecom manager"
+      },
+      "enable_getDeliveryMethods": {
+        "key": "enable_getDeliveryMethods",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "Whether to call SWSE new getDeliveryMethods WS"
+      },
+      "order_status_for_cancel_profile_based": {
+        "key": "order_status_for_cancel_profile_based",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "The config here will overwrite the normal config order_status_for_cancel config. For example, if your profile is IT Support, and we the config is ITS=0100&0500, then you can always cancel it even 0100 status is not one of them order_status_for_cancel. "
+      },
+      "enable_address_validation_bypass": {
+        "key": "enable_address_validation_bypass",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_status_reason_on_order_search": {
+        "key": "enable_status_reason_on_order_search",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_export_country_list": {
+        "key": "customer_export_country_list",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "The country list which will be used for Export Customer Data feature, mainly designed for CCFE WW"
+      },
+      "shipping_billing_address_default_same": {
+        "key": "shipping_billing_address_default_same",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "Indicate during checkout process, whether the billing address should be the same as shipping address."
+      },
+      "special_filter_for_boutique_staff": {
+        "key": "special_filter_for_boutique_staff",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "description": "Filter Paid_In_Boutique payment option, return in boutique, exchange in boutique return reason for boutique staff"
+      },
+      "nsi_cdb_mode": {
+        "key": "nsi_cdb_mode",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_pref_language": {
+        "key": "region_pref_language",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_timezone": {
+        "key": "region_timezone",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_antifraud_flow": {
+        "key": "region_antifraud_flow",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_swse_paytype": {
+        "key": "region_swse_paytype",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_endreturndatedays": {
+        "key": "region_endreturndatedays",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_enable_ecommanger": {
+        "key": "region_enable_ecommanger",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_country": {
+        "key": "region_country",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_taxhandler": {
+        "key": "region_taxhandler",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_timeformat": {
+        "key": "region_timeformat",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_key_value": {
+        "key": "region_key_value",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_currency": {
+        "key": "region_currency",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_dateformat": {
+        "key": "region_dateformat",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_listing_column": {
+        "key": "order_listing_column",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      }
+    }
+  },
+  {
+    "region": "",
+    "brand": "",
+    "scope": "brand",
+    "name": "",
+    "properties": {
+      "maison_product_prefix_enable": {
+        "key": "maison_product_prefix_enable",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_export_default_columns": {
+        "key": "customer_export_default_columns",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_crm_reference_data": {
+        "key": "maison_crm_reference_data",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_product_url": {
+        "key": "maison_product_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_favorites_wishlist_name": {
+        "key": "customer_favorites_wishlist_name",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "JMF": {
+        "key": "JMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Size": {
+            "key": "Size",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Stones": {
+            "key": "Stones",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Clasp": {
+            "key": "Clasp",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Material": {
+            "key": "Material",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "WBR": {
+        "key": "WBR",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "maison_placementCheck": {
+        "key": "maison_placementCheck",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_product_brand": {
+        "key": "maison_product_brand",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "OMF": {
+        "key": "OMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "maison_product_UrlLocale": {
+        "key": "maison_product_UrlLocale",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "WMF": {
+        "key": "WMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Movement": {
+            "key": "Movement",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Bracelet": {
+            "key": "Bracelet",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Case": {
+            "key": "Case",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "maison_key_name": {
+        "key": "maison_key_name",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_product_prefix": {
+        "key": "maison_product_prefix",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_product_urlmerge_option": {
+        "key": "maison_product_urlmerge_option",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_password": {
+        "key": "maison_password",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_fallbackOverlayCheck": {
+        "key": "maison_fallbackOverlayCheck",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "FMF": {
+        "key": "FMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "maison_search_folder": {
+        "key": "maison_search_folder",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "maison_username": {
+        "key": "maison_username",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "EMF": {
+        "key": "EMF",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "Description": {
+            "key": "Description",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Custom_field": {
+            "key": "Custom_field",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "General": {
+            "key": "General",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Temple and Bridges": {
+            "key": "Temple and Bridges",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Lenses": {
+            "key": "Lenses",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "Materials and Stones": {
+            "key": "Materials and Stones",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      }
+    }
+  },
+  {
+    "region": "",
+    "brand": "",
+    "scope": "region_brand",
+    "name": "",
+    "properties": {
+      "enable_belt_adjustment": {
+        "key": "enable_belt_adjustment",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_embossing": {
+        "key": "enable_embossing",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "allow_embossing_ends_with_dot": {
+        "key": "allow_embossing_ends_with_dot",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "display_return_policy": {
+        "key": "display_return_policy",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_warehouse_comment": {
+        "key": "enable_warehouse_comment",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "maximum_warehouse_comment_length": {
+            "key": "maximum_warehouse_comment_length",
+            "value": "",
+            "type": "number",
+            "tag": "",
+            "updated_time": 1514764800
+          },
+          "order_status_for_edit_warehouse_comment": {
+            "key": "order_status_for_edit_warehouse_comment",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "reasons_of_foc": {
+        "key": "reasons_of_foc",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "foc_promotion_code_list": {
+        "key": "foc_promotion_code_list",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_replacement_order": {
+        "key": "enable_replacement_order",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "reasons_of_replacement": {
+            "key": "reasons_of_replacement",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "enable_sms_notification": {
+        "key": "enable_sms_notification",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_pref_language": {
+        "key": "region_pref_language",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_embossing_comment": {
+        "key": "enable_embossing_comment",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_adyenEUPaymentFlow": {
+        "key": "enable_adyenEUPaymentFlow",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_csv_export_columns": {
+        "key": "order_csv_export_columns",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "customer_creation_activation_value": {
+        "key": "customer_creation_activation_value",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_order_return_mail_trigger": {
+        "key": "enable_order_return_mail_trigger",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_paper_invoice": {
+        "key": "enable_paper_invoice",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "default_send_paper_invoice": {
+            "key": "default_send_paper_invoice",
+            "value": "",
+            "type": "boolean",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "enable_maison_charge": {
+        "key": "enable_maison_charge",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_individualproduct": {
+        "key": "enable_individualproduct",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_cancel_reasons": {
+        "key": "order_cancel_reasons",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "discount_level": {
+        "key": "discount_level",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "discount_rate": {
+        "key": "discount_rate",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_status_for_cancel": {
+        "key": "order_status_for_cancel",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "product_number": {
+        "key": "product_number",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "reasons_of_exchange": {
+        "key": "reasons_of_exchange",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "default_draftorderexpiryrange": {
+        "key": "default_draftorderexpiryrange",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "defaultCountryCode_salesOrganization": {
+        "key": "defaultCountryCode_salesOrganization",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_promotionCouponing": {
+        "key": "enable_promotionCouponing",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_isDeliverable_Service": {
+        "key": "enable_isDeliverable_Service",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "engraving_font_list": {
+        "key": "engraving_font_list",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "antifraud_status_order_search": {
+        "key": "antifraud_status_order_search",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "type_of_name_to_display": {
+        "key": "type_of_name_to_display",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_packaging": {
+        "key": "enable_packaging",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "region_boutiquePickup": {
+        "key": "region_boutiquePickup",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_anti_fraud_status": {
+        "key": "order_anti_fraud_status",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "key_value": {
+        "key": "key_value",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "allow_exchange_on_non_zero_balance": {
+        "key": "allow_exchange_on_non_zero_balance",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "allow_special_char_in_engraving": {
+        "key": "allow_special_char_in_engraving",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_pci_compliance": {
+        "key": "enable_pci_compliance",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "pci_compliance_type": {
+            "key": "pci_compliance_type",
+            "value": "",
+            "type": "string",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "gift_max_char": {
+        "key": "gift_max_char",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "gift_max_line_per_gift_card": {
+        "key": "gift_max_line_per_gift_card",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "gift_max_char_per_line": {
+        "key": "gift_max_char_per_line",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "product_server_connect_maxtime": {
+        "key": "product_server_connect_maxtime",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_payment_authorization_status": {
+        "key": "enable_payment_authorization_status",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "reasons_of_return": {
+        "key": "reasons_of_return",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "auth_info_clickable": {
+        "key": "auth_info_clickable",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "unconfirmed_account_enable": {
+        "key": "unconfirmed_account_enable",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "blackListPaymentType": {
+        "key": "blackListPaymentType",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_status_for_delivery_method_modification": {
+        "key": "order_status_for_delivery_method_modification",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "show_order_replica_button": {
+        "key": "show_order_replica_button",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "engraving_characters_allowed": {
+        "key": "engraving_characters_allowed",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_search_from_date": {
+        "key": "order_search_from_date",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "billing_countries_enable": {
+        "key": "billing_countries_enable",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "billing_countries_list": {
+            "key": "billing_countries_list",
+            "value": "",
+            "type": "list",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "product_region": {
+        "key": "product_region",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_ndsk_nstk_shopping_bag_label": {
+        "key": "enable_ndsk_nstk_shopping_bag_label",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "supported_payment_type": {
+        "key": "supported_payment_type",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_createreturnOrder": {
+        "key": "enable_createreturnOrder",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_status_for_delivery_address_modification": {
+        "key": "order_status_for_delivery_address_modification",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_draftOrder": {
+        "key": "enable_draftOrder",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_chinaAddressManagement": {
+        "key": "enable_chinaAddressManagement",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_free_refill": {
+        "key": "enable_free_refill",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "positive_max_percentage_maison_charge": {
+        "key": "positive_max_percentage_maison_charge",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "clip_engraving_max_limit": {
+        "key": "clip_engraving_max_limit",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_sfyproduct": {
+        "key": "enable_sfyproduct",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "order_status_for_gift_card_modification": {
+        "key": "order_status_for_gift_card_modification",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "show_complimentary_gift_card": {
+        "key": "show_complimentary_gift_card",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "save_crm_information": {
+        "key": "save_crm_information",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_sub_salutation": {
+        "key": "enable_sub_salutation",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800,
+        "sub_properties": {
+          "sub_salutation_map": {
+            "key": "sub_salutation_map",
+            "value": "",
+            "type": "map",
+            "tag": "",
+            "updated_time": 1514764800
+          }
+        }
+      },
+      "enable_engraving_language_exclusion_check": {
+        "key": "enable_engraving_language_exclusion_check",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "crm_information": {
+        "key": "crm_information",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_guestcheckout": {
+        "key": "enable_guestcheckout",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_product_server": {
+        "key": "enable_product_server",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "supported_delivery_modes": {
+        "key": "supported_delivery_modes",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "antifraud_visible": {
+        "key": "antifraud_visible",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "negative_max_percentage_maison_charge": {
+        "key": "negative_max_percentage_maison_charge",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "gift_font_list": {
+        "key": "gift_font_list",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_nondedicatedstock": {
+        "key": "enable_nondedicatedstock",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "vat_refundable": {
+        "key": "vat_refundable",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "giftcard_level": {
+        "key": "giftcard_level",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "cap_engraving_max_limit": {
+        "key": "cap_engraving_max_limit",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "account_confirmation_email_url": {
+        "key": "account_confirmation_email_url",
+        "value": "",
+        "type": "string",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "age_number": {
+        "key": "age_number",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_paymentDetails": {
+        "key": "enable_paymentDetails",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "product_quantity_number": {
+        "key": "product_quantity_number",
+        "value": "",
+        "type": "number",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_createArrangeReturnService": {
+        "key": "enable_createArrangeReturnService",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "supported_salutation_code_list": {
+        "key": "supported_salutation_code_list",
+        "value": "",
+        "type": "list",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "supported_salutation_code_map": {
+        "key": "supported_salutation_code_map",
+        "value": "",
+        "type": "map",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_repair_order": {
+        "key": "enable_repair_order",
+        "value": "",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_contact_option_for_guest": {
+        "key": "enable_contact_option_for_guest",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      },
+      "enable_email_tracking": {
+        "key": "enable_email_tracking",
+        "value": "FALSE",
+        "type": "boolean",
+        "tag": "",
+        "updated_time": 1514764800
+      }
+    }
+  }
+]

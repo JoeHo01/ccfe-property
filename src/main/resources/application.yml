@@ -1,0 +1,16 @@
+server:
+  port: 1280
+
+spring:
+#mongo配置
+  data:
+    mongodb:
+      host: 10.12.121.245
+      port: 27017
+      database: ccfe_gl
+      username: ccfe
+      password: ccfe
+      authentication-database: admin
+
+banner:
+  location: banner.txt
