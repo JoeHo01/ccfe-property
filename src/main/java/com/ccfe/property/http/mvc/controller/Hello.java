@@ -1,6 +1,5 @@
 package com.ccfe.property.http.mvc.controller;
 
-import com.ccfe.property.http.mvc.dao.MongoSupport;
 import com.ccfe.property.http.mvc.entity.PropertiesBundleDO;
 import com.ccfe.property.http.mvc.service.PropertiesValidation;
 import org.springframework.beans.factory.annotation.Autowired;

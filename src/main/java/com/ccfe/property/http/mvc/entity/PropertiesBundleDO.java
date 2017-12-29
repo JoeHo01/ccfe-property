@@ -1,34 +1,26 @@
 package com.ccfe.property.http.mvc.entity;
 
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.*;
 
 import java.util.*;
 
-@Entity(value = "properties_bundle")
 public class PropertiesBundleDO {
 
-    @Id
     private ObjectId id;
 
     /** The region. */
-    @Property("region")
     private String region;
 
     /** The brand. */
-    @Property("brand")
     private String brand;
 
     /** The scope. */
-    @Property("scope")
     private String scope;
 
     /** The name. */
-    @Property("name")
     private String name;
 
     /** The properties. */
-    @Embedded("properties")
     private Map<String, PropertyDO> properties = new HashMap<>();
 
     public ObjectId getId() {

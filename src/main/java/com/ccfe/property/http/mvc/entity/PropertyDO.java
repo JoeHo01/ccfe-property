@@ -1,55 +1,41 @@
 package com.ccfe.property.http.mvc.entity;
 
-import org.mongodb.morphia.annotations.Embedded;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Property;
-
-import javax.xml.crypto.Data;
-import java.util.Date;
 import java.util.Map;
 
-@Embedded
 public class PropertyDO {
     /**
      * The key.
      */
-    @Property("key")
     private String key;
 
     /**
      * The value.
      */
-    @Property("value")
     private String value;
 
     /**
      * The type.
      */
-    @Property("type")
     private String type;
 
     /**
      * The tag.
      */
-    @Property("tag")
     private String tay;
 
     /**
      * The description.
      */
-    @Property("description")
     private String description;
 
     /**
      * The updated time.
      */
-    @Property(value = "updated_time")
     private Long updatedTime;
 
     /**
      * The sub properties.
      */
-    @Embedded("sub_properties")
     private Map<String, PropertyDO> subProperties;
 
     public String getKey() {
