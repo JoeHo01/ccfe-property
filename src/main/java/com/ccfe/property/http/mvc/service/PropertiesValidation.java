@@ -1,15 +1,11 @@
 package com.ccfe.property.http.mvc.service;
 
 import com.ccfe.property.common.utils.FileUtil;
-import com.ccfe.property.http.mvc.entity.PropertiesBundleDO;
-import com.ccfe.property.http.mvc.entity.PropertyDO;
+import com.ccfe.property.http.mvc.dao.MongoSupport;
+import com.ccfe.property.http.mvc.entity.DO.PropertiesBundleDO;
+import com.ccfe.property.http.mvc.entity.DO.PropertyDO;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import org.bson.types.ObjectId;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.mapping.Mapper;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.UpdateOperations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,13 +14,13 @@ import java.util.*;
 @Service
 public class PropertiesValidation {
 
-    private final Datastore datastore;
+    private final MongoSupport mongoSupport;
 
     private Map<String, JSONObject> models = new HashMap<>();
 
     @Autowired
-    public PropertiesValidation(Datastore datastore) {
-        this.datastore = datastore;
+    public PropertiesValidation(MongoSupport mongoSupport) {
+        this.mongoSupport = mongoSupport;
     }
 
     public void initModel() {
@@ -57,15 +53,8 @@ public class PropertiesValidation {
         }
     }
 
-    private void addProperty(JSONObject property, ObjectId id) {
+    private void addProperty(JSONObject property, String id) {
         String propertyName = "properties." + property.getString("key");
-        Query<PropertiesBundleDO> query = datastore.createQuery(PropertiesBundleDO.class).field(Mapper.ID_KEY).equal(id);
-
-
-        //UpdateOps 在创建时会将全部字段逆序排列
-        UpdateOperations<PropertiesBundleDO> update = datastore.createUpdateOperations(PropertiesBundleDO.class);
-
-        update.set(propertyName,property);
-        datastore.update(query, update);
+        mongoSupport.update(PropertiesBundleDO.class,propertyName,property,id);
     }
 }

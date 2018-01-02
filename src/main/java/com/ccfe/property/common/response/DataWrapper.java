@@ -1,11 +1,11 @@
 package com.ccfe.property.common.response;
 
 
-public class DataWrapper<D>  {
+public class DataWrapper<T>  {
     private CallStatusEnum callStatus;
     private ErrorCodeEnum errorCode;
     private String errorLabel;
-    private D data;
+    private T data;
     private Page page;
 
     public DataWrapper() {
@@ -37,11 +37,11 @@ public class DataWrapper<D>  {
         return errorLabel;
     }
 
-    public D getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(D data) {
+    public void setData(T data) {
         this.data = data;
     }
 

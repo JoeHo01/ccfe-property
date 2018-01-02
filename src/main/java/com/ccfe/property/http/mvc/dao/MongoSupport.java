@@ -2,14 +2,17 @@ package com.ccfe.property.http.mvc.dao;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
+import com.ccfe.property.http.mvc.entity.DO.PropertiesBundleDO;
 import com.mongodb.*;
+import com.mongodb.operation.UpdateOperation;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Key;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.UpdateOperations;
-import org.mongodb.morphia.query.UpdateResults;
+import org.mongodb.morphia.mapping.Mapper;
+import org.mongodb.morphia.query.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -281,15 +284,79 @@ public class MongoSupport {
     }
 
     /**
-     * Update.
+     * Update By Id
      *
-     * @param <T>   the generic type
-     * @param query the query
-     * @param ops   the ops
-     * @return the update results
+     * @param ids
+     * @param clazz
+     * @param column
+     * @param value
+     * @param <T>
+     * @return
      */
-    public <T> UpdateResults update(final Query<T> query, final UpdateOperations<T> ops, boolean ifCreate) {
-        return datastore.update(query, ops, ifCreate);
+    public <T> UpdateResults update(Class<T> clazz, String column, Object value, String... ids) {
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).set(column, value);
+        return datastore.update(query, update);
+    }
+
+    /**
+     *
+     * @param clazz
+     * @param column
+     * @param value
+     * @param ids
+     * @param <T>
+     * @return
+     */
+    public <T> UpdateResults addToArray(Class<T> clazz, String column, List<Object> value, String... ids){
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(column, value);
+        return datastore.update(query, update);
+    }
+
+    /**
+     *
+     * @param clazz
+     * @param column
+     * @param value
+     * @param ids
+     * @param <T>
+     * @return
+     */
+    public <T> UpdateResults addToArray(Class<T> clazz, String column, Object value, String... ids){
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(column, value);
+        return datastore.update(query, update);
+    }
+
+    /**
+     *
+     * @param clazz
+     * @param column
+     * @param value
+     * @param ids
+     * @param <T>
+     * @return
+     */
+    public <T> UpdateResults removeFromArray(Class<T> clazz, String column, List<Object> value, String... ids){
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(column, value);
+        return datastore.update(query, update);
+    }
+
+    /**
+     *
+     * @param clazz
+     * @param column
+     * @param value
+     * @param ids
+     * @param <T>
+     * @return
+     */
+    public <T> UpdateResults removeFromArray(Class<T> clazz, String column, Object value, String... ids){
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(column, value);
+        return datastore.update(query, update);
     }
 
     /**
@@ -304,4 +371,37 @@ public class MongoSupport {
         return datastore.updateFirst(query, ops);
     }
 
+    /**
+     *
+     * @param clazz
+     * @param column
+     * @param in
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> query(Class<T> clazz, String column, List<Object> in){
+        Query<T> query = datastore.createQuery(clazz).filter(column + " in", in);
+        return query.asList();
+    }
+
+    public <T> List<T> query(Class<T> clazz, Map<String, List<Object>> in, Map<String, List<Object>> nin){
+        Query<T> query = datastore.createQuery(clazz);
+        Set<String> inKeys = in.keySet();
+        for (String column : inKeys){
+            query.filter(column + " in", in.get(column));
+        }
+        Set<String> ninKeys = nin.keySet();
+        for (String column : ninKeys){
+            query.filter(column + " nin", nin.get(column));
+        }
+        return query.asList();
+    }
+
+    private ObjectId[] formatId(String... ids) {
+        ObjectId[] objectIds = new ObjectId[ids.length];
+        for (int i = 0; i < ids.length; i++) {
+            objectIds[i] = new ObjectId(ids[i]);
+        }
+        return objectIds;
+    }
 }

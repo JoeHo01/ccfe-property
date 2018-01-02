@@ -1,7 +1,7 @@
 package com.ccfe.property.http.mvc.controller;
 
 import com.ccfe.property.http.mvc.dao.MongoSupport;
-import com.ccfe.property.http.mvc.entity.PropertiesBundleDO;
+import com.ccfe.property.http.mvc.entity.DO.PropertiesBundleDO;
 import com.ccfe.property.http.mvc.service.PropertiesValidation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("property")
+@RequestMapping("hello")
 public class Hello {
 
     private final MongoSupport mongoSupport;
@@ -23,7 +23,7 @@ public class Hello {
         this.propertiesValidation = propertiesValidation;
     }
 
-    @RequestMapping("hello")
+    @RequestMapping()
     public String hello(){
         return "CCFE property is Running";
     }

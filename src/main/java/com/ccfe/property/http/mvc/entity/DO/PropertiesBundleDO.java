@@ -1,15 +1,14 @@
-package com.ccfe.property.http.mvc.entity;
+package com.ccfe.property.http.mvc.entity.DO;
 
-import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.*;
 
 import java.util.*;
 
-@Entity(value = "properties_bundle")
+@Entity("properties_bundle")
 public class PropertiesBundleDO {
 
     @Id
-    private ObjectId id;
+    private String id;
 
     /** The region. */
     @Property("region")
@@ -31,11 +30,11 @@ public class PropertiesBundleDO {
     @Embedded("properties")
     private Map<String, PropertyDO> properties = new HashMap<>();
 
-    public ObjectId getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(String id) {
         this.id = id;
     }
 

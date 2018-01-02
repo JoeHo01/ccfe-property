@@ -1,15 +1,13 @@
-package com.ccfe.property.http.mvc.entity;
+package com.ccfe.property.http.mvc.entity.DO;
 
 import org.mongodb.morphia.annotations.Embedded;
-import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Property;
 
-import javax.xml.crypto.Data;
-import java.util.Date;
 import java.util.Map;
 
 @Embedded
 public class PropertyDO {
+
     /**
      * The key.
      */
