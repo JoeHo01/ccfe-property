@@ -27,6 +27,7 @@ public class PropertiesValidation {
         String path = System.getProperty("user.dir") + "/src/main/resources/properties_format.json";
         String jsonWords = FileUtil.readFile(path);
         JSONArray modelArray = JSONArray.fromObject(jsonWords);
+
         for (int i = 0; i < modelArray.size(); i++) {
             JSONObject jsonObject = modelArray.getJSONObject(i);
             this.models.put(jsonObject.getString("scope"), jsonObject);
@@ -48,13 +49,24 @@ public class PropertiesValidation {
         newProperties.addAll(modelProperties.keySet());
         newProperties.removeAll(validatedProperties.keySet());
 
-        for (String key : newProperties) {
-            addProperty(modelProperties.getJSONObject(key), propertiesBundle.getId());
-        }
+        System.out.println(propertiesBundle.getScope() + " : "+ newProperties);
+
+        Set<String> newProperties2 = new HashSet<>();
+
+        newProperties2.addAll(validatedProperties.keySet());
+        newProperties2.removeAll(modelProperties.keySet());
+
+        System.out.println(propertiesBundle.getName() + " : "+newProperties2);
+
+        System.out.println();
+
+//        for (String key : newProperties) {
+//            addProperty(modelProperties.getJSONObject(key), propertiesBundle.getId());
+//        }
     }
 
     private void addProperty(JSONObject property, String id) {
         String propertyName = "properties." + property.getString("key");
-        mongoSupport.update(PropertiesBundleDO.class,propertyName,property,id);
+        mongoSupport.update(PropertiesBundleDO.class, propertyName, property, id);
     }
 }

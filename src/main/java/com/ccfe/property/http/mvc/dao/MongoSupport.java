@@ -1,13 +1,10 @@
 package com.ccfe.property.http.mvc.dao;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.ccfe.property.http.mvc.entity.DO.PropertiesBundleDO;
-import com.mongodb.*;
-import com.mongodb.operation.UpdateOperation;
+import com.ccfe.property.common.response.Page;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Key;
@@ -34,23 +31,17 @@ public class MongoSupport {
     }
 
     /**
-     * Gets the datastore.
-     *
-     * @return the datastore
+     * @param clazz
+     * @param <T>
+     * @return
      */
-    public Datastore getDatastore() {
-        return datastore;
+    public <T> List<T> findAll(final Class<T> clazz) {
+        return datastore.createQuery(clazz).asList();
     }
 
-    /**
-     * Count.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @return the long
-     */
-    public <T> long count(final Class<T> clazz) {
-        return datastore.getCount(clazz);
+    public <T> T findById(final Class<T> clazz, String id) {
+        Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(id));
+        return query.get();
     }
 
     /**
@@ -64,223 +55,8 @@ public class MongoSupport {
         return datastore.getCount(query);
     }
 
-    /**
-     * Creates the query.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @return the query
-     */
-    public <T> Query<T> createQuery(final Class<T> clazz) {
-        return datastore.createQuery(clazz);
-    }
-
-    /**
-     * Creates the update operations.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @return the update operations
-     */
-    public <T> UpdateOperations<T> createUpdateOperations(final Class<T> clazz) {
-        return datastore.createUpdateOperations(clazz);
-    }
-
-    /**
-     * Delete.
-     *
-     * @param <T>    the generic type
-     * @param entity the entity
-     * @return the write result
-     */
-    public <T> WriteResult delete(final T entity) {
-        return datastore.delete(entity);
-    }
-
-    /**
-     * Delete.
-     *
-     * @param <T>    the generic type
-     * @param entity the entity
-     * @param wc     the wc
-     * @return the write result
-     */
-    public <T> WriteResult delete(final T entity, final WriteConcern wc) {
-        return datastore.delete(entity, wc);
-    }
-
-    /**
-     * Delete by id.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @param id    the id
-     * @return the write result
-     */
-    public <T> WriteResult deleteById(final Class<T> clazz, final String id) {
-        return datastore.delete(clazz, id);
-    }
-
-    /**
-     * Delete by query.
-     *
-     * @param <T>   the generic type
-     * @param query the query
-     * @return the write result
-     */
-    public <T> WriteResult deleteByQuery(final Query<T> query) {
-        return datastore.delete(query);
-    }
-
-    /**
-     * Delete.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @param ids   the ids
-     * @return the write result
-     */
-    public <T> WriteResult delete(final Class<T> clazz, final Collection<ObjectId> ids) {
-        return datastore.delete(clazz, ids);
-    }
-
-    /**
-     * Ensure indexes.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     */
-    public <T> void ensureIndexes(final Class<T> clazz) {
-        datastore.ensureIndexes(clazz);
-    }
-
-    /**
-     * Exists.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @param key   the key
-     * @param value the value
-     * @return true, if successful
-     */
-    public <T> boolean exists(final Class<T> clazz, final String key, final Object value) {
-        return exists(datastore.find(clazz, key, value));
-    }
-
-    /**
-     * Exists.
-     *
-     * @param <T>   the generic type
-     * @param query the query
-     * @return true, if successful
-     */
-    public <T> boolean exists(final Query<T> query) {
-        return datastore.getCount(query) > 0;
-    }
-
-    /**
-     * Find all.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @return the list
-     */
-    public <T> List<T> findAll(final Class<T> clazz) {
-        return createQuery(clazz).asList();
-    }
-
-    /**
-     * Find.
-     *
-     * @param <T>      the generic type
-     * @param clazz    the clazz
-     * @param property the property
-     * @param value    the value
-     * @return the query
-     */
-    public <T> Query<T> find(final Class<T> clazz, String property, Object value) {
-        return datastore.find(clazz, property, value);
-    }
-
-    /**
-     * Find all.
-     *
-     * @param <T>   the generic type
-     * @param query the query
-     * @return the list
-     */
-    public <T> List<T> findAll(final Query<T> query) {
-        return query.asList();
-    }
-
-    /**
-     * Find one.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @param key   the key
-     * @param value the value
-     * @return the t
-     */
-    public <T> T findOne(final Class<T> clazz, final String key, final Object value) {
-        return find(clazz, key, value).get();
-    }
-
-    /**
-     * Find one.
-     *
-     * @param <T>   the generic type
-     * @param query the query
-     * @return the t
-     */
-    public <T> T findOne(final Query<T> query) {
-        return query.get();
-    }
-
-    /**
-     * Gets the.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @param id    the id
-     * @return the t
-     */
-    public <T> T get(final Class<T> clazz, final String id) {
-        return datastore.get(clazz, new ObjectId(id));
-    }
-
-    /**
-     * Gets the collection.
-     *
-     * @param <T>   the generic type
-     * @param clazz the clazz
-     * @return the collection
-     */
-    public <T> DBCollection getCollection(final Class<T> clazz) {
-        return datastore.getCollection(clazz);
-    }
-
-    /**
-     * Save or update.
-     *
-     * @param <T>    the generic type
-     * @param entity the entity
-     * @return the key
-     */
-    public <T> Key<T> saveOrUpdate(final T entity) {
-        return datastore.save(entity);
-    }
-
-    /**
-     * Save or update.
-     *
-     * @param <T>    the generic type
-     * @param entity the entity
-     * @param wc     the wc
-     * @return the key
-     */
-    public <T> Key<T> saveOrUpdate(final T entity, final WriteConcern wc) {
-        return datastore.save(entity, wc);
+    public <T> Key<T> addDocument(T document) {
+        return datastore.save(document);
     }
 
     /**
@@ -288,74 +64,70 @@ public class MongoSupport {
      *
      * @param ids
      * @param clazz
-     * @param column
+     * @param field
      * @param value
      * @param <T>
      * @return
      */
-    public <T> UpdateResults update(Class<T> clazz, String column, Object value, String... ids) {
+    public <T> UpdateResults update(Class<T> clazz, String field, Object value, String... ids) {
         Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
-        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).set(column, value);
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).set(field, value);
         return datastore.update(query, update);
     }
 
     /**
-     *
      * @param clazz
-     * @param column
+     * @param field
      * @param value
      * @param ids
      * @param <T>
      * @return
      */
-    public <T> UpdateResults addToArray(Class<T> clazz, String column, List<Object> value, String... ids){
+    public <T> UpdateResults addToArray(Class<T> clazz, String field, List<Object> value, String... ids) {
         Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
-        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(column, value);
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(field, value);
         return datastore.update(query, update);
     }
 
     /**
-     *
      * @param clazz
-     * @param column
+     * @param field
      * @param value
      * @param ids
      * @param <T>
      * @return
      */
-    public <T> UpdateResults addToArray(Class<T> clazz, String column, Object value, String... ids){
+    public <T> UpdateResults addToArray(Class<T> clazz, String field, Object value, String... ids) {
         Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
-        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(column, value);
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).addToSet(field, value);
         return datastore.update(query, update);
     }
 
     /**
-     *
      * @param clazz
-     * @param column
+     * @param field
      * @param value
      * @param ids
      * @param <T>
      * @return
      */
-    public <T> UpdateResults removeFromArray(Class<T> clazz, String column, List<Object> value, String... ids){
+    public <T> UpdateResults removeFromArray(Class<T> clazz, String field, List<Object> value, String... ids) {
         Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
-        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(column, value);
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(field, value);
         return datastore.update(query, update);
     }
 
     /**
-     *
      * @param clazz
-     * @param column
+     * @param field
      * @param value
      * @param ids
      * @param <T>
      * @return
      */
-    public <T> UpdateResults removeFromArray(Class<T> clazz, String column, Object value, String... ids){
+    public <T> UpdateResults removeFromArray(Class<T> clazz, String field, Object value, String... ids) {
         Query<T> query = datastore.createQuery(clazz).filter(Mapper.ID_KEY + " in", formatId(ids));
-        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(column, value);
+        UpdateOperations<T> update = datastore.createUpdateOperations(clazz).removeAll(field, value);
         return datastore.update(query, update);
     }
 
@@ -365,34 +137,62 @@ public class MongoSupport {
      * @param <T>   the generic type
      * @param query the query
      * @param ops   the ops
-     * @return the update results
+     * @return the updateProperties results
      */
     public <T> UpdateResults updateFirst(final Query<T> query, final UpdateOperations<T> ops) {
         return datastore.updateFirst(query, ops);
     }
 
     /**
+     * Query : Single field with value included
      *
      * @param clazz
-     * @param column
+     * @param field
      * @param in
      * @param <T>
      * @return
      */
-    public <T> List<T> query(Class<T> clazz, String column, List<Object> in){
-        Query<T> query = datastore.createQuery(clazz).filter(column + " in", in);
+    public <T> List<T> query(Class<T> clazz, String field, List<Object> in) {
+        Query<T> query = datastore.createQuery(clazz).filter(field + " in", in);
         return query.asList();
     }
 
-    public <T> List<T> query(Class<T> clazz, Map<String, List<Object>> in, Map<String, List<Object>> nin){
+    /**
+     * Query : Multi fields with value included or excepted
+     *
+     * @param clazz
+     * @param in
+     * @param nin
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> query(Class<T> clazz, Map<String, List<Object>> in, Map<String, List<Object>> nin) {
         Query<T> query = datastore.createQuery(clazz);
-        Set<String> inKeys = in.keySet();
-        for (String column : inKeys){
-            query.filter(column + " in", in.get(column));
+        for (String key : in.keySet()) {
+            query.filter(key + " in", in.get(key));
         }
-        Set<String> ninKeys = nin.keySet();
-        for (String column : ninKeys){
-            query.filter(column + " nin", nin.get(column));
+        for (String key : nin.keySet()) {
+            query.filter(key + " nin", nin.get(key));
+        }
+        return query.asList();
+    }
+
+    public <T> List<T> query(Class<T> clazz, String field, String value){
+        return datastore.createQuery(clazz).field(field).contains(value).asList();
+    }
+
+    /**
+     * Query : Multi fields with value fuzzy matching
+     *
+     * @param clazz
+     * @param conditions
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> query(Class<T> clazz, Map<String, String> conditions){
+        Query<T> query = datastore.createQuery(clazz);
+        for (String key : conditions.keySet()){
+            query.field(key).contains(conditions.get(key));
         }
         return query.asList();
     }

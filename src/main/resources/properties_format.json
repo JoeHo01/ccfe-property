@@ -1029,14 +1029,6 @@
         "updated_time": 1514764800,
         "description": "Whether to call SWSE new getDeliveryMethods WS"
       },
-      "order_status_for_cancel_profile_based": {
-        "key": "order_status_for_cancel_profile_based",
-        "value": "",
-        "type": "map",
-        "tag": "",
-        "updated_time": 1514764800,
-        "description": "The config here will overwrite the normal config order_status_for_cancel config. For example, if your profile is IT Support, and we the config is ITS=0100&0500, then you can always cancel it even 0100 status is not one of them order_status_for_cancel. "
-      },
       "enable_address_validation_bypass": {
         "key": "enable_address_validation_bypass",
         "value": "FALSE",
@@ -1216,94 +1208,6 @@
         "tag": "",
         "updated_time": 1514764800
       },
-      "JMF": {
-        "key": "JMF",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Size": {
-            "key": "Size",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Stones": {
-            "key": "Stones",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Clasp": {
-            "key": "Clasp",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Material": {
-            "key": "Material",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
-      },
-      "WBR": {
-        "key": "WBR",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
-      },
       "maison_placementCheck": {
         "key": "maison_placementCheck",
         "value": "",
@@ -1318,93 +1222,12 @@
         "tag": "",
         "updated_time": 1514764800
       },
-      "OMF": {
-        "key": "OMF",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
-      },
       "maison_product_UrlLocale": {
         "key": "maison_product_UrlLocale",
         "value": "",
         "type": "string",
         "tag": "",
         "updated_time": 1514764800
-      },
-      "WMF": {
-        "key": "WMF",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Movement": {
-            "key": "Movement",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Bracelet": {
-            "key": "Bracelet",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Case": {
-            "key": "Case",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
       },
       "maison_key_name": {
         "key": "maison_key_name",
@@ -1441,36 +1264,6 @@
         "tag": "",
         "updated_time": 1514764800
       },
-      "FMF": {
-        "key": "FMF",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
-      },
       "maison_search_folder": {
         "key": "maison_search_folder",
         "value": "",
@@ -1484,57 +1277,6 @@
         "type": "string",
         "tag": "",
         "updated_time": 1514764800
-      },
-      "EMF": {
-        "key": "EMF",
-        "value": "",
-        "type": "string",
-        "tag": "",
-        "updated_time": 1514764800,
-        "sub_properties": {
-          "Description": {
-            "key": "Description",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Custom_field": {
-            "key": "Custom_field",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "General": {
-            "key": "General",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Temple and Bridges": {
-            "key": "Temple and Bridges",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Lenses": {
-            "key": "Lenses",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          },
-          "Materials and Stones": {
-            "key": "Materials and Stones",
-            "value": "",
-            "type": "list",
-            "tag": "",
-            "updated_time": 1514764800
-          }
-        }
       }
     }
   },

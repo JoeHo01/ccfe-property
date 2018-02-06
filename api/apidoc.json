@@ -1,0 +1,9 @@
+{
+  "name": "CCFE Properties Improvement API",
+  "version": "0.0.0",
+  "description": "CCFE properties management improvement back-end API DOC",
+  "apidoc": {
+    "title": "CCFE Properties Improvement API",
+    "url" : "http://ccfe-server/ccfe/property"
+  }
+}

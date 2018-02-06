@@ -9,4 +9,12 @@ public class DataResponse {
         result.setData(data);
         return result;
     }
+
+    public static <T> DataWrapper<T> fail(String errorMessage, CallStatusEnum callStatus, ErrorCodeEnum errorCode){
+        DataWrapper<T> result = new DataWrapper<>();
+        result.setCallStatus(callStatus);
+        result.setErrorCode(errorCode);
+        result.setErrorMassage(errorMessage);
+        return result;
+    }
 }

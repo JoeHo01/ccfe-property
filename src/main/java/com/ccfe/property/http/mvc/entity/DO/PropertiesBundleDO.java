@@ -1,5 +1,6 @@
 package com.ccfe.property.http.mvc.entity.DO;
 
+import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.*;
 
 import java.util.*;
@@ -10,23 +11,33 @@ public class PropertiesBundleDO {
     @Id
     private String id;
 
-    /** The region. */
+    /**
+     * The region.
+     */
     @Property("region")
     private String region;
 
-    /** The brand. */
+    /**
+     * The brand.
+     */
     @Property("brand")
     private String brand;
 
-    /** The scope. */
+    /**
+     * The scope.
+     */
     @Property("scope")
     private String scope;
 
-    /** The name. */
+    /**
+     * The name.
+     */
     @Property("name")
     private String name;
 
-    /** The properties. */
+    /**
+     * The properties.
+     */
     @Embedded("properties")
     private Map<String, PropertyDO> properties = new HashMap<>();
 

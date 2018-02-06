@@ -16,6 +16,7 @@ public enum ErrorCodeEnum implements Serializable {
     Token_Failure("JWT验证失效", 1005),
     Token_Forbidden("JWT验证权限不足", 1006),
     Column_NotMatch("修改值与字段不匹配",2001),
+    Param_Error("参数错误",4001),
     ;
 
     private String label;

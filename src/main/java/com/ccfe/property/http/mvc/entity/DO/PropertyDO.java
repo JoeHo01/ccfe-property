@@ -3,6 +3,7 @@ package com.ccfe.property.http.mvc.entity.DO;
 import org.mongodb.morphia.annotations.Embedded;
 import org.mongodb.morphia.annotations.Property;
 
+import java.util.Date;
 import java.util.Map;
 
 @Embedded
@@ -42,7 +43,7 @@ public class PropertyDO {
      * The updated time.
      */
     @Property(value = "updated_time")
-    private Long updatedTime;
+    private Date updatedTime;
 
     /**
      * The sub properties.
@@ -90,11 +91,11 @@ public class PropertyDO {
         this.description = description;
     }
 
-    public Long getUpdatedTime() {
+    public Date getUpdatedTime() {
         return updatedTime;
     }
 
-    public void setUpdatedTime(Long updatedTime) {
+    public void setUpdatedTime(Date updatedTime) {
         this.updatedTime = updatedTime;
     }
 

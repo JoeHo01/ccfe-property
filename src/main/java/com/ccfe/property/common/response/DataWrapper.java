@@ -1,17 +1,11 @@
 package com.ccfe.property.common.response;
 
-
 public class DataWrapper<T>  {
     private CallStatusEnum callStatus;
     private ErrorCodeEnum errorCode;
-    private String errorLabel;
+    private String errorMassage;
     private T data;
     private Page page;
-
-    public DataWrapper() {
-        setCallStatus(CallStatusEnum.SUCCEED);
-        setErrorCode(ErrorCodeEnum.No_Error);
-    }
 
     public CallStatusEnum getCallStatus() {
         return callStatus;
@@ -27,14 +21,14 @@ public class DataWrapper<T>  {
 
     public void setErrorCode(ErrorCodeEnum errorCode) {
         this.errorCode = errorCode;
-        if (!errorCode.equals(ErrorCodeEnum.No_Error)) {
-            this.callStatus = CallStatusEnum.FAILED;
-        }
-        this.errorLabel = errorCode.getLabel();
     }
 
-    public String getErrorLabel() {
-        return errorLabel;
+    public String getErrorMassage() {
+        return errorMassage;
+    }
+
+    public void setErrorMassage(String errorMassage) {
+        this.errorMassage = errorMassage;
     }
 
     public T getData() {
@@ -51,11 +45,5 @@ public class DataWrapper<T>  {
 
     public void setPage(Page page) {
         this.page = page;
-    }
-
-    @Override
-    public String toString() {
-        return	"Code:" + this.callStatus + "\n" +
-                "Error Code:" + this.errorCode+ "\n";
     }
 }
